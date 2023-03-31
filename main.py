@@ -68,6 +68,7 @@ def tanyain(message):
 		elif data == "kenapa":
 			knp = random.choices(kenapa)
 			kirim(id, knp, reply_to_message_id=mid)
+
                 elif data == "siapa":
 			knp = random.choices(siapa)
 			kirim(id, knp, reply_to_message_id=mid)
