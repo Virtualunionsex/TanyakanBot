@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # VARIABLE
-token = os.getenv("BOT_TOKEN")
-sudo = os.getenv("SUDO")
+token = os.getenv("5851945481:AAHyxkGMsxi0bOipQSJmcZTHv6tbabFu_UU")
+sudo = os.getenv("1715348447")
 
 
 # JAWABAN BOT
