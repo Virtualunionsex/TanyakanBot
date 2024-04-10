@@ -11,7 +11,7 @@ kopi = bot.copy_message
 
 
 
-@bot.message_handler(commands=["help", "start", "bcast"])
+@bot.message_handler(commands=["thelp", "tstart", "tbcast"])
 def perintah(message):
 	id = message.chat.id
 	teks = message.text
@@ -25,11 +25,11 @@ def perintah(message):
 			else:
 				value = str(value)
 				file.write(value + "\n")
-	if "/start" in teks:
+	if "/tstart" in teks:
 		kirim(id, "*Saya adalah bot yang dapat menjawab pertanyaan dalam group maupun private chat.\n\nketik /help untuk panduan\n\nby @Virtual_executive *", reply_to_message_id=mid)
-	elif "/help" in teks:
+	elif "/thelp" in teks:
 		kirim(id, "*# cara menggunakan bot #*\n\n_silahkan beri pertanyaan apakah, kapan, kenapa, beserta pertanyaannya.\n\ncontoh pertanyaan:\n\nkapan aku menjadi anime?\n\napakah aku bisa menjadi raja iblis?\n\nkenapa aku terlalu tampan?_", reply_to_message_id=mid)
-	elif "/bcast" in teks:
+	elif "/tbcast" in teks:
 		if id == int(admin):
 			pesan = kirim(id, "_silahkan masukan pesan anda..._")
 			lanjut(pesan, bcast)
